@@ -1,0 +1,127 @@
+/* Google Sheets Clone Styling */
+
+/* Ensure the background is WHITE */
+body {
+  background-color: white !important;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Title Bar (Green like Google Sheets) */
+.title-bar {
+  background-color: #0F9D58; /* Google Sheets Green */
+  color: white;
+  padding: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Menu Bar - Light Gray */
+.menu-bar {
+  background-color: #e8eaed;
+  color: black;
+  display: flex;
+  padding: 5px;
+  justify-content: flex-start;
+  gap: 15px;  /* Reduce space between items */
+  border-bottom: 1px solid #ccc;
+}
+
+/* Toolbar - Slightly Darker Gray */
+.toolbar {
+  background-color: #dadce0;
+  color: black;
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+  margin-bottom: 10px;
+  justify-content: flex-start;
+  gap: 10px;  /* Reduce space between items */
+  border-bottom: 2px solid #bbb;
+}
+
+/* Button Styling */
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #ccc;
+  padding: 5px 8px;
+  cursor: pointer;
+  margin: 2px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f1f3f4;
+}
+
+.bold { font-weight: bold; }
+.italic { font-style: italic; }
+.underline { text-decoration: underline; }
+
+/* Spreadsheet Styling */
+.grid-container {
+  overflow: auto;
+  max-width: 98vw;
+  max-height: 75vh;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  padding: 5px;
+  background-color: white; /* Set white background */
+}
+
+.spreadsheet {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: white; /* Ensure white */
+}
+
+.spreadsheet td {
+  border: 1px solid #ddd;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  position: relative;
+  background-color: white; /* Ensure white */
+}
+
+.spreadsheet td input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  text-align: center;
+  background-color: transparent;
+}
+
+/* Highlight Selected Cell */
+.selected {
+  background-color: #e1dfcc !important;
+  color: black;
+}
+
+/* Sheet Tabs */
+.sheet-tabs {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  background-color: #f1f3f4;
+  padding: 5px;
+}
+
+/* Active Sheet Tab (Green like Google Sheets) */
+.sheet-tabs button {
+  padding: 5px 10px;
+  margin: 2px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background-color: white;
+}
+
+.sheet-tabs button.active {
+  background-color: #0F9D58; /* Google Sheets Green */
+  color: white;
+}
