@@ -1,0 +1,141 @@
+body {
+    background-color: white !important;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Title Bar */
+  .title-bar {
+    background-color: #0F9D58;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  /* Menu Bar */
+  .menu-bar {
+    background-color: #e8eaed;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: flex-start;
+    gap: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .menu-bar button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  .menu-bar button.active-sheet {
+    background-color: #0F9D58;
+    color: white;
+  }
+  
+  /* Toolbar */
+  .toolbar {
+    background-color: #dadce0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #bbb;
+  }
+  
+  
+  /* Spreadsheet */
+  .grid-container {
+    overflow: auto;
+    width: 100%;
+    max-width: 98vw;
+    max-height: 90vh;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: white;
+  }
+  
+  
+  .spreadsheet {
+    border-collapse: collapse;
+    overflow: auto;
+    width: max-content;
+    min-width: 100%;
+    background-color: white;
+  }
+  
+  .spreadsheet td {
+    border: 1px solid #ddd;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background-color: white;
+  }
+  
+  .spreadsheet td input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    background-color: transparent;
+    font-size: 14px; /* Makes text readable on small screens */
+    min-width: 60px;
+  }
+  
+  
+
+  button {
+    padding: 8px 12px;
+    font-size: 14px;
+    white-space: nowrap; /* Prevents text wrapping */
+  }
+  
+  /* Sheet Tabs */
+  .sheet-tabs {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: #f1f3f4;
+    padding: 5px;
+  }
+  
+  .sheet-tabs button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  .sheet-tabs button.active {
+    background-color: #0F9D58;
+    color: white;
+  }
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+      max-height: 60vh; /* Reduce height for smaller screens */
+    }
+  
+    .menu-bar, .toolbar {
+      flex-direction: column; /* Stack items on smaller screens */
+      align-items: flex-start;
+    }
+  
+    button {
+      padding: 6px 10px;
+      font-size: 12px;
+    }
+  
+    .spreadsheet td {
+      min-width: 50px;
+    }
+}
